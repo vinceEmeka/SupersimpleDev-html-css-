@@ -1,0 +1,311 @@
+<style>
+  .uber {
+    background-color: black;
+    color: white;
+    padding: 10px 16px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+
+  .uber:hover {
+    opacity: 0.7;
+  }
+
+  .amazon {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 36px;
+    border: none;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+
+  .amazon:hover {
+    background-color: rgb(234, 199, 22);
+  }
+
+  .git {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+  }
+
+  .git:hover {
+    box-shadow: 4px 4px 10px rgba(46, 164, 79, 0.15);
+  }
+
+  .get {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 3px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+
+  .get:hover {
+    background-color: rgb(102, 70, 151);
+  }
+
+  .download {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border-color: rgb(108, 117, 125);
+    padding: 10px 16px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: color 0.15s, background-color 0.15s;
+  }
+
+  .download:hover {
+    color: white;
+    background-color: rgb(108, 117, 125);
+  }
+
+  .apply {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 36px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+
+  .apply:hover {
+    background-color: rgb(10, 90, 169);
+  }
+
+  .save {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border-color: rgb(10, 102, 194);
+    padding: 10px 16px;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: border-width 0.15s;
+  }
+
+  .save:hover {
+    border-width: 3px;
+  }
+
+  a {
+    color: rgb(0, 113, blue);
+    margin-top: 30px;
+    transition: color 0.15s;
+  }
+
+  a:hover {
+    color: rgb(128, 58, 58);
+  }
+
+  .nike {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .price {
+    color: rgb(0, 118, 0);
+  }
+
+  .add {
+    background-color: rgb(255, 216, 20);
+    height: 36px;
+    width: 115px;
+    color: black;
+    border: none;
+    border-radius: 36px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s, opacity 0.15s;
+  }
+
+  .add:hover {
+    background-color: rgb(204, 173, 15);
+  }
+
+  .add:active {
+    opacity: 0.4;
+  }
+
+  .buy {
+    height: 36px;
+    width: 115px;
+    color: black;
+    border: none;
+    border-radius: 36px;
+    margin-right: 8px;
+    background-color: rgb(255, 164, 28);
+    cursor: pointer;
+    transition: background-color 0.15s, opacity 0.15s;
+  }
+  .buy:hover {
+    background-color: rgb(227, 147, 26);
+  }
+
+  .buy:active {
+    opacity: 0.4;
+  }
+
+  .page-back {
+    padding: 8px 8px;
+    margin-right: 8px;
+  }
+
+  .page-next {
+    padding: 8px 8px;
+    margin-left: 5px;
+  }
+  .pages {
+    margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .stretch {
+    padding: 10px 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: padding 0.15s, font-size 0.15s;
+  }
+
+  .stretch:hover {
+    padding: 15px 26px;
+    font-size: 16px;
+  }
+
+  .shadow {
+    padding: 10px 16px;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    border: none;
+    margin-top: 10px;
+
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .shadow:active {
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }
+
+  .one {
+    padding: 10px 16px;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: padding 0.15s, margin 0.15s;
+  }
+
+  .one:hover {
+    padding: 10px 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .two {
+    padding: 10px 16px;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: padding 0.15s, margin 0.15s;
+  }
+
+  .two:hover {
+    padding: 10px 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .three {
+    padding: 10px 16px;
+    background-color: rgb(0, 128, 0);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0px 10px;
+    transition: padding 0.15s, margin 0.15s;
+  }
+
+  .three:hover {
+    padding: 10px 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+</style>
+
+<button class="uber">Request now</button>
+
+<button class="amazon">Add to Cart</button>
+
+<button class="git">Sign up</button>
+
+<button class="get">Get started</button>
+<button class="download">Download</button>
+
+<button class="apply">Apply on company website</button>
+<button class="save">Save</button> <br />
+
+<a href="http://amazon.com" target="_blank">Back to Amazon</a>
+<p class="nike">Nike Black Running Shoes</p>
+<p class="price">$39 - in stock</p>
+<p>Free delivery tomorrow</p>
+
+<button class="add">Add to cart</button>
+
+<button class="buy">Buy now</button> <br />
+<br />
+
+<button class="page-back">Back</button>
+<a class="pages" href="">1</a>
+<a class="pages" href="">2</a>
+<a class="pages" href="">3</a>
+<a class="pages" href="">4</a>
+<a class="pages" href="">5</a>
+
+<button class="page-next">Next</button>
+<br />
+
+<button class="stretch">Stretch</button>
+
+<button class="shadow">Shadow</button>
+
+<button class="one">One</button>
+
+<button class="two">Two</button>
+
+<button class="three">Three</button>
