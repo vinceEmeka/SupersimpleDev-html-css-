@@ -36,6 +36,7 @@
           <input class="search-bar" type="text" placeholder="Search" />
           <button class="search-button">
             <img class="search-icon" src="./header icons/search.svg" alt="" />
+            <div class="tooltip">Search</div>
           </button>
           <button class="voice-search-button">
             <img
@@ -43,15 +44,24 @@
               src="./header icons/voice-search-icon.svg"
               alt=""
             />
+            <div class="tooltip">Search with your voice</div>
           </button>
         </div>
         <div class="right-section">
-          <img class="upload-icon" src="./header icons/upload.svg" alt="" />
-          <img
-            class="youtube-apps-icon"
-            src="./header icons/youtube-apps.svg"
-            alt=""
-          />
+          <div class="upload-container">
+            <img class="upload-icon" src="./header icons/upload.svg" alt="" />
+            <div class="tooltip">Create</div>
+          </div>
+
+          <div class="youtube-apps-container">
+            <img
+              class="youtube-apps-icon"
+              src="./header icons/youtube-apps.svg"
+              alt=""
+            />
+            <div class="tooltip">YouTube apps</div>
+          </div>
+
           <div class="notifications-icon-container">
             <img
               class="notifications-icon"
@@ -59,6 +69,7 @@
               alt=""
             />
             <div class="notifications-count">3</div>
+            <div class="tooltip">Notifications</div>
           </div>
           <img
             class="current-user-picture"
